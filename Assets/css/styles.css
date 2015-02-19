@@ -1,0 +1,383 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(../font/Ubuntu.ttf);
+    font-weight: normal;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------- Générale-----------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+html, body{
+    font-family: "Ubuntu", Tahoma,sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400 !important;
+    width: 100%;
+    height: 100%;
+    text-shadow: none !important;
+    color: #FFF;
+}
+
+*::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF !important;
+     opacity: 1;
+}
+*::-moz-placeholder { /* WebKit browsers */
+    color:    #FFF !important;
+    opacity: 1;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+ 
+/* iOS specific fix, don't use it on Android devices */
+.scrollable > * {
+    -webkit-transform: translateZ(0px);
+}
+
+div[data-role="content"] {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.ui-content{
+    margin: auto;
+    width: 100%;
+    z-index: 10;
+    padding: 0;
+}
+.ui-focus{
+    box-shadow: none !important;
+}
+.ui-shadow-inset{
+    box-shadow: none !important;
+}
+textarea{
+    background: none repeat scroll 0 0 transparent;
+    border: medium none !important;
+    color: #fff !important;
+    font-size: 28px;
+    height: 170px !important;
+    padding: 10px !important;
+    width: 100% !important;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------- Connexion---------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#index{
+    height: 100%;
+}
+#index .ui-header, #index .ui-footer{
+    display:none;
+}
+#index .ui-content{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+#index .ui-content .link{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+#index .ui-content .link p > a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 40px;
+}
+#index .ui-content .wrapper-signin > p{
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+}
+#index .ui-content .wrapper-signup > p{
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+}
+#index .ui-content .wrapper-signin{
+    background-color: #F39C11;
+}
+#index .ui-content .wrapper-signup{
+    background-color: #25BF9D;
+}
+
+.ui-page input{
+    border: none;
+    background: transparent;
+    box-shadow: none !important;
+    color: #FFF;
+    font-size: 40px;
+}
+.ui-input-text, .ui-body-inherit{
+    text-shadow: none;
+    border-radius: 0;
+    border: none !important;
+    background:transparent !important;
+    box-shadow: none;
+}
+#signin{
+    background-color: #F39C11;
+}
+#signup{
+    background-color: #25BF9D;
+}
+
+#signin .ui-header{
+    background-color: #F39C11;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+}
+#signin .ui-footer{
+    background-color: #fff;
+    border: medium none;
+    bottom: 0;
+    color: #f39c11;
+    font-size: 30px;
+    padding: 15px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+#signup .ui-header{
+    background-color: #25BF9D;
+    border:none;
+    color: #FFF;
+    font-size: 20px;
+}
+#signup .ui-footer{
+    background-color: #fff;
+    border: medium none;
+    bottom: 0;
+    color: #25BF9D;
+    font-size: 30px;
+    padding: 15px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------- Items -----------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#add-quotes{
+    background-color: #1FBE9A;
+}
+#add-friends{
+    background-color: #F39C11;
+}
+#invite-friends{
+    background-color: #304153;
+}
+.ui-content .list-items{
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+}
+.ui-content .new{
+    font-size: 15px;
+    font-weight: lighter;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.ui-content .item:nth-child(3n-2){
+    background-color: #1FBE9A !important;
+}
+.ui-content .item:nth-child(3n-1){
+    background-color: #F39C11 !important;
+}
+.ui-content .item:nth-child(3n+0){
+    background-color: #304153 !important;
+}
+
+.ui-content .item p > a{
+    background-color: transparent;
+    color: #FFF !important;
+    border: none !important;
+    font-size: 30px;
+    padding: 0 !important;
+    right: 0 !important;
+    text-decoration: none;
+}
+.ui-content .item > a:hover{
+    background-color: transparent;
+    color:#FFF;
+}
+.ui-content .item{
+    color: #fff;
+    display: inline-table;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: auto;
+    padding: 25px 0;
+    text-shadow: none;
+    width: 100%;
+    cursor: pointer;
+}
+.ui-content .end{
+    height: 16px;
+    background-color: #FFF !important;
+}
+.ui-content .item em{
+    font-weight: bold;
+}
+.ui-content .item > p{
+    padding: 0 10px;
+    margin: 0;
+    text-overflow: unset;
+    white-space: normal;
+    width: 90%;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+}
+
+#friends input{
+    display: none;
+}
+#friends .friend-selected{
+    background-color: #FFF !important;
+    color: #2D3E50;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------- Autres -----------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.ui-header{
+    background-color: #FFF !important;
+    color: #304153;
+    font-size: 30px;
+    text-align: center;
+     box-shadow: 0 8px 5px -7px #304153;
+    -webkit-box-shadow: 0 8px 5px -7px #304153;
+    z-index: 13;
+     cursor: pointer;
+}
+.ui-header h1{
+    color: #304153 !important;
+    margin: 0;
+    text-overflow: unset;
+    color: #304153;
+    margin: 0 !important;
+    padding: 15px 0 !important;
+    text-overflow: unset !important
+    text-decoration: none;
+}
+.ui-header h1 > a{
+    color: #304153 !important;
+    text-decoration: none;
+}
+
+.ui-footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #FFF !important;
+    color: #304153 !important;
+    width: 100%;
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+    border: none !important;
+    z-index: 12;
+}
+#menu .ui-footer, #quotes .ui-footer{
+    display :none;
+}
+#back-quote{
+    display: none;
+}
+#friends-list{
+    padding-bottom: 80px;
+}
+.loader{
+    display: none;
+}
+#dialog{
+    background-color: #fff;
+    color: #304153;
+    left: 14%;
+    position: fixed;
+    top: 35%;
+    width: 70%;
+    z-index: 999;
+    display: none;
+}
+#dialog > p{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: lighter;
+}
+#dialog > div{
+    border-top: 1px solid #304153;
+    padding: 5px 0;
+    text-align: center;
+    font-size:15px;
+}
+#dialog > h2{
+    font-style: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 900;
+    opacity: 0.8;
+    display:none;
+}
