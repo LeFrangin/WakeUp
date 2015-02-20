@@ -10,6 +10,20 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+
+//Slider
+var mySwiper = myApp.swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 0,
+    resistance : true,
+    resistanceRatio: 0.85,
+    onSlideChangeStart: function (swiper) {
+            $$( ".view-main #login" ).html( $$( '.page-content .swiper-container .swiper-slide' ).eq( swiper.activeIndex ).attr( "data-login" ) );
+            //console.log(swiper);
+            //console.log(swiper.activeIndex);
+    },
+});
+
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('about', function (page) {
     // run createContentPage func after link was clicked
@@ -46,3 +60,24 @@ function createContentPage() {
     );
 	return;
 }
+
+// Custom handler
+
+$$( '#timeLine' ).mousedown( function () {
+    $$( ".timeLine-overlay" ).show();
+    $$( ".timeLine-overlay" ).attr( "data-show", "true" );
+});
+
+$$( '#timeLine' ).mouseup( function () {
+    $$( ".timeLine-overlay" ).hide();
+    $$( ".timeLine-overlay" ).attr( "data-show", "false" );
+});
+
+$$( '#timeLine' ).mousemove( function () {
+
+    if ( $$( ".timeLine-overlay" ).attr( "data-show") == "true" )
+    {
+        $$( ".timeLine-overlay" ).html( $$( this ).val() + "h" );
+        mySwiper.slideTo( $$( ".swiper-slide.time-" + $$( this ).val() ).attr( "data-position" ), 400, true);
+    }
+});
