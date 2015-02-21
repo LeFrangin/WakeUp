@@ -18,9 +18,10 @@ var mySwiper = myApp.swiper('.swiper-container', {
     resistance : true,
     resistanceRatio: 0.85,
     onSlideChangeStart: function (swiper) {
-            $$( ".view-main #login" ).html( $$( '.page-content .swiper-container .swiper-slide' ).eq( swiper.activeIndex ).attr( "data-login" ) );
-            //console.log(swiper);
-            //console.log(swiper.activeIndex);
+
+            $$( ".view-main #login" ).html( $$( '.page-content .swiper-container .swiper-slide' ).eq( swiper.activeIndex ).attr( "data-login" )  + " - " + $$( '.page-content .swiper-container .swiper-slide' ).eq( swiper.activeIndex ).attr( "data-time" ) + "h" );
+            $$( "#timeLine" ).val( $$( ".swiper-slide.position-" + swiper.activeIndex ).attr( "data-time" ) );
+
     },
 });
 
@@ -78,6 +79,6 @@ $$( '#timeLine' ).mousemove( function () {
     if ( $$( ".timeLine-overlay" ).attr( "data-show") == "true" )
     {
         $$( ".timeLine-overlay" ).html( $$( this ).val() + "h" );
-        mySwiper.slideTo( $$( ".swiper-slide.time-" + $$( this ).val() ).attr( "data-position" ), 400, true);
+        mySwiper.slideTo( $$( ".swiper-slide.time-" + $$( this ).val() ).attr( "data-position" ), 200, true);
     }
 });
