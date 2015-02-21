@@ -28,7 +28,12 @@ body, html, .page-content{
 	bottom: 0;
 	width: 90%;
 	margin-left: 5%;
+	background: transparent;
 }
+.page-content .range-slider{
+	background: transparent !important;
+}
+
 .page-content .swiper-container{
 	height: 100%;
 }
