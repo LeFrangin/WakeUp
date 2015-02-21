@@ -4,6 +4,8 @@ body, html, .page-content{
 	height: 100%;
 }
 
+
+
 .timeLine-overlay{
 	background-image: url("../img/overlay.png");
 	position: fixed;
@@ -16,7 +18,17 @@ body, html, .page-content{
 	font-size: 40px;
 	display: none;
 }
+.page-content{
+	padding-bottom: 0 !important;
+}
 
+.page-content .range-slider{
+	z-index: 10000;
+	position: fixed;
+	bottom: 0;
+	width: 90%;
+	margin-left: 5%;
+}
 .page-content .swiper-container{
 	height: 100%;
 }
