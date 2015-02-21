@@ -13,7 +13,7 @@ var mainView = myApp.addView('.view-main', {
 
 //Slider
 var mySwiper = myApp.swiper('.swiper-container', {
-    speed: 400,
+    speed: 200,
     spaceBetween: 0,
     resistance : true,
     resistanceRatio: 0.85,
