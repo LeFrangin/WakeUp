@@ -44,69 +44,12 @@
                 <div class="swiper-pagination"></div>
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="content-block-title">Mon compte</div>
-                    <div class="list-block">
-                      <ul>
-                        <!-- Text inputs -->
-                        <li>
-                          <div class="item-content">
-                            <div class="item-inner">
-                              <div class="item-title label">Login</div>
-                              <div class="item-input">
-                                <input type="text" placeholder="Login">
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="item-content">
-                            <div class="item-inner">
-                              <div class="item-title label">E-mail</div>
-                              <div class="item-input">
-                                <input type="email" placeholder="E-mail">
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="item-content">
-                            <div class="item-inner">
-                              <div class="item-title label">Phone</div>
-                              <div class="item-input">
-                                <input type="phone" placeholder="Phone">
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                     
-                        <!-- Date -->
-                        <li>
-                          <div class="item-content">
-                            <div class="item-inner">
-                              <div class="item-title label">Birth date</div>
-                              <div class="item-input">
-                                <input type="date" placeholder="Birth day" value="2014-04-30">
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                     
-                        <!-- Switch (Checkbox) -->
-                        <li>
-                          <div class="item-content">
-                            <div class="item-inner">
-                              <div class="item-title label">Erase my picture</div>
-                              <div class="item-input">
-                                <label class="label-switch">
-                                  <input type="checkbox">
-                                  <div class="checkbox"></div>
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                    <ul id="main-menu">
+                      <li><a href="Pages/compte.html" class="item-link">Mon Compte</a></li>
+                      <li><a href="Pages/favori.html" class="item-link">Mes Favoris</a></li>
+                      <li><a href="#" class="item-link">Se déonnecter</a></li>
+                      <li><a href="Pages/feedback.html" class="item-link">Feedback</a></li>
+                    </ul>
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-pictures swiper-container">
@@ -136,7 +79,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide"><span>Slide 2</span></div>
+                  <div class="swiper-slide icon-take-picture">
+                    <span class="icon flash"><img src="Assets/img/flash.png" /></span>
+                    <span class="icon switch"><img src="Assets/img/switch.png" /></span>
+                    <span class="icon press"><img src="Assets/img/press.png" /></span>
+                  </div>
                 </div>
 
                 
@@ -174,7 +121,7 @@
                 <input type="range" min="0" max="23" value="0" step="1" id="timeLine"/>
               </div>
               <div id="icon-panel">
-                <a href="#" class=" icon info"><img src="Assets/img/info.png" /></a>
+                <a href="#" class="icon info"><img src="Assets/img/info.png" /></a>
                 <a href="#" class="icon favorite"><img src="Assets/img/favori.png" /></a>
                 <a href="#" class="icon menu"><img src="Assets/img/menu.png" /></a>
                 <a href="#" class="icon take"><img src="Assets/img/take.png" /></a>
@@ -189,4 +136,4 @@
     <!-- Path to your app js-->
     <script type="text/javascript" src="Assets/js/my-app.js"></script>
   </body>
-</html>
+</html>-
