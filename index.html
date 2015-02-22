@@ -31,16 +31,6 @@
     <div class="views">
       <!-- Your main view, should have "view-main" class-->
       <div class="view view-main">
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <!-- We have home navbar without left link-->
-            <div class="left sliding" id="login">Lego</div>
-            <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
-            </div>
-          </div>
-        </div>
         <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-through toolbar-through">
           <!-- Page, data-page contains page name-->
@@ -50,32 +40,106 @@
               <!-- TimeLine indicator -->
               <div class="timeLine-overlay"></div>
               <!-- Slider container -->
-                <div class="swiper-container">
-                    <!-- Slides wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide time-0 position-0" data-position="0" data-time="0" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
-                        <div class="swiper-slide time-1 position-1" data-position="1" data-time="1" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
-                        <div class="swiper-slide time-2 position-2" data-position="2" data-time="2" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
-
-                        <div class="swiper-slide time-3 position-3" data-position="3" data-time="3" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
-                        <div class="swiper-slide time-4 position-4" data-position="4" data-time="4" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
-                        <div class="swiper-slide time-5 position-5" data-position="5" data-time="5" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
-
-                        <div class="swiper-slide time-6 position-6" data-position="6" data-time="6" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
-                        <div class="swiper-slide time-7 position-7" data-position="7" data-time="7" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
-                        <div class="swiper-slide time-8 position-8" data-position="8" data-time="8" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
-
-                        <div class="swiper-slide time-9 position-9" data-position="9" data-time="9" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
-                        <div class="swiper-slide time-10 position-10" data-position="10" data-time="10" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
-                        <div class="swiper-slide time-11 position-11" data-position="11" data-time="11" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
-
-                        <div class="swiper-slide time-12 position-12" data-position="12" data-time="12" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
-                        <div class="swiper-slide time-13 position-13" data-position="13" data-time="13" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
-                        <div class="swiper-slide time-14 position-14" data-position="14" data-time="14" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
-
+                <div class="swiper-container swiper-menu">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="content-block-title">Mon compte</div>
+                    <div class="list-block">
+                      <ul>
+                        <!-- Text inputs -->
+                        <li>
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <div class="item-title label">Login</div>
+                              <div class="item-input">
+                                <input type="text" placeholder="Login">
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <div class="item-title label">E-mail</div>
+                              <div class="item-input">
+                                <input type="email" placeholder="E-mail">
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <div class="item-title label">Phone</div>
+                              <div class="item-input">
+                                <input type="phone" placeholder="Phone">
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                     
+                        <!-- Date -->
+                        <li>
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <div class="item-title label">Birth date</div>
+                              <div class="item-input">
+                                <input type="date" placeholder="Birth day" value="2014-04-30">
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                     
+                        <!-- Switch (Checkbox) -->
+                        <li>
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <div class="item-title label">Erase my picture</div>
+                              <div class="item-input">
+                                <label class="label-switch">
+                                  <input type="checkbox">
+                                  <div class="checkbox"></div>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-pictures swiper-container">
+                      <!-- Slides wrapper -->
+                      <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide time-0 position-0" data-position="0" data-time="0" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
+                          <div class="swiper-slide time-1 position-1" data-position="1" data-time="1" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
+                          <div class="swiper-slide time-2 position-2" data-position="2" data-time="2" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
+
+                          <div class="swiper-slide time-3 position-3" data-position="3" data-time="3" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
+                          <div class="swiper-slide time-4 position-4" data-position="4" data-time="4" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
+                          <div class="swiper-slide time-5 position-5" data-position="5" data-time="5" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
+
+                          <div class="swiper-slide time-6 position-6" data-position="6" data-time="6" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
+                          <div class="swiper-slide time-7 position-7" data-position="7" data-time="7" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
+                          <div class="swiper-slide time-8 position-8" data-position="8" data-time="8" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
+
+                          <div class="swiper-slide time-9 position-9" data-position="9" data-time="9" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
+                          <div class="swiper-slide time-10 position-10" data-position="10" data-time="10" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
+                          <div class="swiper-slide time-11 position-11" data-position="11" data-time="11" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
+
+                          <div class="swiper-slide time-12 position-12" data-position="12" data-time="12" data-login="Lego" ><img src="Assets/img/image.jpg" /></div>
+                          <div class="swiper-slide time-13 position-13" data-position="13" data-time="13" data-login="Mannequin" ><img src="Assets/img/image1.png" /></div>
+                          <div class="swiper-slide time-14 position-14" data-position="14" data-time="14" data-login="Toy Story" ><img src="Assets/img/image2.jpg" /></div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"><span>Slide 2</span></div>
                 </div>
+
+                
               <!--<div class="content-block-title">What about simple navigation?</div>
               <div class="list-block">
                 <ul>
@@ -106,9 +170,15 @@
                   <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
                 </div>
               </div>-->
-			  <div class="range-slider">
-              <input type="range" min="0" max="23" value="0" step="1" id="timeLine"/>
-            </div>
+			        <div class="range-slider">
+                <input type="range" min="0" max="23" value="0" step="1" id="timeLine"/>
+              </div>
+              <div id="icon-panel">
+                <a href="#" class=" icon info"><img src="Assets/img/info.png" /></a>
+                <a href="#" class="icon favorite"><img src="Assets/img/favori.png" /></a>
+                <a href="#" class="icon menu"><img src="Assets/img/menu.png" /></a>
+                <a href="#" class="icon take"><img src="Assets/img/take.png" /></a>
+              </div>
             </div>
           </div>
         </div>

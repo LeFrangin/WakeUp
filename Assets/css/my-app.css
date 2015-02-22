@@ -20,6 +20,7 @@ body, html, .page-content{
 }
 .page-content{
 	padding-bottom: 0 !important;
+	padding-top: 0 !important;
 }
 
 .page-content .range-slider{
@@ -47,3 +48,29 @@ body, html, .page-content{
 	height: 100%;
 }
 
+#icon-panel .icon{
+	position: fixed;
+	top: 2%;
+	z-index: 10000;
+	width: 30px;
+}
+
+#icon-panel .icon img{
+	width: 100%;
+}
+
+#icon-panel .info{
+	left: 5%;
+}
+
+#icon-panel .favorite{
+	left: 20%;
+}
+
+#icon-panel .take{
+	left: 35%;
+}
+
+#icon-panel .menu{
+	right: 5%;
+}

@@ -12,18 +12,44 @@ var mainView = myApp.addView('.view-main', {
 
 
 //Slider
-var mySwiper = myApp.swiper('.swiper-container', {
+var pictures = myApp.swiper('.swiper-pictures', {
     speed: 200,
     spaceBetween: 0,
     resistance : true,
     resistanceRatio: 0.85,
     onSlideChangeStart: function (swiper) {
 
-            $$( ".view-main #login" ).html( $$( '.page-content .swiper-container .swiper-slide' ).eq( swiper.activeIndex ).attr( "data-login" )  + " - " + $$( '.page-content .swiper-container .swiper-slide' ).eq( swiper.activeIndex ).attr( "data-time" ) + "h" );
+            //$$( ".view-main #login" ).html( $$( '.page-content .swiper-container .swiper-slide' ).eq( swiper.activeIndex ).attr( "data-login" )  + " - " + $$( '.page-content .swiper-container .swiper-slide' ).eq( swiper.activeIndex ).attr( "data-time" ) + "h" );
             $$( "#timeLine" ).val( $$( ".swiper-slide.position-" + swiper.activeIndex ).attr( "data-time" ) );
 
     },
 });
+
+// Vertical, 0px Between
+var menu = myApp.swiper('.swiper-menu', {
+  pagination:'.swiper-vertical .swiper-pagination',
+  direction: 'vertical',
+  onSlideChangeStart: function (swiper) {
+
+            if ( swiper.activeIndex == 0 )
+            {
+                $$( "#icon-panel"  ).hide();
+                $$( ".range-slider"  ).hide();
+            }
+            else if ( swiper.activeIndex == 1 )
+            {
+                $$( "#icon-panel"  ).show();
+                $$( ".range-slider"  ).show();
+            }
+            else if ( swiper.activeIndex == 2 )
+            {
+                $$( "#icon-panel"  ).hide();
+                $$( ".range-slider"  ).hide();
+            }
+    },
+});
+
+menu.slideTo( 1, 0, true );
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('about', function (page) {
@@ -79,6 +105,6 @@ $$( '#timeLine' ).mousemove( function () {
     if ( $$( ".timeLine-overlay" ).attr( "data-show") == "true" )
     {
         $$( ".timeLine-overlay" ).html( $$( this ).val() + "h" );
-        mySwiper.slideTo( $$( ".swiper-slide.time-" + $$( this ).val() ).attr( "data-position" ), 200, true);
+        pictures.slideTo( $$( ".swiper-slide.time-" + $$( this ).val() ).attr( "data-position" ), 200, true);
     }
 });
