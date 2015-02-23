@@ -7,6 +7,9 @@ body, html, .page-content{
 ul{
 	list-style: none;
 }
+a img{
+	border : none;
+}
 
 #main-menu{
 	width: 100%;
@@ -134,4 +137,39 @@ ul{
 
 #icon-panel .menu{
 	right: 5%;
+}
+
+.input-list{
+	background-color: #fff;
+	padding: 5px 0;
+}
+
+.input-list input{
+	-moz-appearance: none;
+	box-sizing: border-box;
+	border: medium none;
+	background: none repeat scroll 0px 0px transparent;
+	border-radius: 0px;
+	box-shadow: none;
+	padding: 0px 0px 0px 5px;
+	margin: 0px;
+	height: 43px;
+	color: #000;
+	font-size: 17px;
+	font-family: inherit;
+}
+.input-list .input-group{
+	padding: 0;
+	margin: 5px 0;
+	margin-left: 10px;
+}
+.input-list .input-group label{
+	font-size: 17px;
+	color: #FFF;
+	padding: 10px 5px;
+	min-width: 100px;
+}
+
+.input-list .input-group.border-green label{
+	background: #12B0A5;
 }

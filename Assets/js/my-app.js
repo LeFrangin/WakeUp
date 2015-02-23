@@ -36,6 +36,7 @@ var menu = myApp.swiper('.swiper-menu', {
             if ( swiper.activeIndex == 0 )
             {
                 $$( "#icon-panel"  ).hide();
+                $$( ".icon-take-picture"  ).hide();
                 $$( ".range-slider"  ).hide();
             }
             else if ( swiper.activeIndex == 1 )
@@ -46,6 +47,7 @@ var menu = myApp.swiper('.swiper-menu', {
             else if ( swiper.activeIndex == 2 )
             {
                 $$( "#icon-panel"  ).hide();
+                $$( ".icon-take-picture"  ).show();
                 $$( ".range-slider"  ).hide();
             }
     },
