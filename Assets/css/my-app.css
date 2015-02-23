@@ -164,10 +164,11 @@ a img{
 	margin-left: 10px;
 }
 .input-list .input-group label{
-	font-size: 17px;
-	color: #FFF;
-	padding: 10px 5px;
-	min-width: 100px;
+	 font-size: 17px;
+    color: #FFF;
+    padding: 10px 5px;
+    min-width: 88px;
+    display: inline-table;
 }
 
 .input-list .input-group.border-green label{
