@@ -29,6 +29,8 @@ var pictures = myApp.swiper('.swiper-pictures', {
 var menu = myApp.swiper('.swiper-menu', {
   pagination:'.swiper-vertical .swiper-pagination',
   direction: 'vertical',
+  spaceBetween: 0,
+  speed: 400,
   onSlideChangeStart: function (swiper) {
 
             if ( swiper.activeIndex == 0 )
