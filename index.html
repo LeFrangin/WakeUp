@@ -9,24 +9,15 @@
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="Assets/css/framework7.min.css">
     <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="Assets/css/my-app.css">
+    <link rel="stylesheet" href="Assets/css/custom.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
-      <div class="content-block">
-        <ul>
-          <li>Mon compte</li>
-          <li>Mes photos</li>
-          <li>Mes favoris</li>
-          <li>Se déconnecter</li>
-        </ul>
-      </div>
-    </div>
     <!-- Views-->
     <div class="views">
       <!-- Your main view, should have "view-main" class-->
@@ -45,10 +36,10 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <ul id="main-menu">
-                      <li class="account"><a href="Pages/compte.html" class="item-link">Mon Compte</a></li>
-                      <li class="favorite"><a href="Pages/favori.html" class="item-link">Mes Favoris</a></li>
-                      <li class="feedback"><a href="Pages/feedback.html" class="item-link">Feedback</a></li>
-                      <li class="disconnect"><a href="#" class="item-link">Se déonnecter</a></li>
+                      <li class="account shadow-bottom"><a href="Pages/account.html" class="item-link"><img src="Assets/img/account-menu.png" /> <span>Mon Compte</span></a></li>
+                      <li class="favorite shadow-bottom"><a href="Pages/favori.html" class="item-link"><img src="Assets/img/favorite-menu.png" /> <span>Mes Favoris</span></a></li>
+                      <li class="feedback shadow-bottom"><a href="Pages/feedback.html" class="item-link"><img src="Assets/img/feedback-menu.png" /> <span>Feedback</span></a></li>
+                      <li class="disconnect shadow-bottom"><a href="#" class="item-link"><img src="Assets/img/logout-menu.png" /> <span>Se déconnecter</span></a></li>
                     </ul>
                   </div>
                   <div class="swiper-slide">
@@ -85,46 +76,13 @@
                     <span class="icon press"><img src="Assets/img/press.png" /></span>
                   </div>
                 </div>
-
-                
-              <!--<div class="content-block-title">What about simple navigation?</div>
-              <div class="list-block">
-                <ul>
-                  <li><a href="Pages/about.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner"> 
-                          <div class="item-title">About</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="Pages/services.html" class="item-link">
-                      <div class="item-content"> 
-                        <div class="item-inner">
-                          <div class="item-title">Services</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="Pages/form.html" class="item-link">
-                      <div class="item-content"> 
-                        <div class="item-inner">
-                          <div class="item-title">Form</div>
-                        </div>
-                      </div></a></li>
-                </ul>
-              </div>-->
-              <!--<div class="content-block-title">Side panels</div>
-              <div class="content-block">
-                <div class="row">
-                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
-                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
-                </div>
-              </div>-->
 			        <div class="range-slider">
                 <input type="range" min="0" max="23" value="0" step="1" id="timeLine"/>
               </div>
               <div id="icon-panel">
-                <a href="#" class="icon info"><img src="Assets/img/info.png" /></a>
-                <a href="#" class="icon favorite"><img src="Assets/img/favori.png" /></a>
+                <a href="#" class="icon info"><img src="Assets/img/more.png" /></a>
+                <a href="#" class="icon favorite"><img src="Assets/img/favorite.png" /></a>
                 <a href="#" class="icon menu"><img src="Assets/img/menu.png" /></a>
-                <a href="#" class="icon take"><img src="Assets/img/take.png" /></a>
               </div>
             </div>
           </div>
@@ -134,6 +92,6 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="Assets/js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="Assets/js/my-app.js"></script>
+    <script type="text/javascript" src="Assets/js/custom.js"></script>
   </body>
 </html>-

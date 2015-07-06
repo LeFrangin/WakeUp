@@ -1,52 +1,23 @@
-
-<!-- We don't need full layout here, because this page will be parsed with Ajax-->
-<!-- Top Navbar-->
-<div class="navbar">
-  <div class="navbar-inner">
-    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-    <div class="center sliding">About</div>
-    <div class="right">
-      <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
-    </div>
-  </div>
-</div>
 <div class="pages">
   <!-- Page, data-page contains page name-->
-  <div data-page="about" class="page">
+  <div data-page="form" class="page" id="page-favorite">
     <!-- Scrollable page content-->
     <div class="page-content">
-      <div class="content-block">
-        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Retour</span></a></div>
-        <div class="content-block-title">Mes Favoris</div>
-        <div class="list-block">
-            <ul>
-              <li class="swipeout">
-                <div class="swipeout-content item-content">
-                  <div class="item-inner">LeFrangin</div>
-                </div>
-                <div class="swipeout-actions-left">
-                  <a href="#" class="action1 bg-red">Supprimer</a>
-                </div>
-              </li>
-              <li class="swipeout">
-                <div class="swipeout-content item-content">
-                  <div class="item-inner">LeFrangin</div>
-                </div>
-                <div class="swipeout-actions-left">
-                  <a href="#" class="action1 bg-red">Supprimer</a>
-                </div>
-              </li>
-              <li class="swipeout">
-                <div class="swipeout-content item-content">
-                  <div class="item-inner">LeFrangin</div>
-                </div>
-                <div class="swipeout-actions-left">
-                  <a href="#" class="action1 bg-red">Supprimer</a>
-                </div>
-              </li>
-            </ul>
-          </div>
+      <div class="title">
+        <a href="#" class="back link"><span></span></a>
+        <span>Mes Favoris</span>
       </div>
+      <ul class="favorite-list">
+        <li>
+          <span class="login">Le Frangin</span>
+          <span class="number">5</span>
+        </li>
+        <li>
+          <span class="login">Nicolas</span>
+          <span class="number">7</span>
+        </li>
+      </ul>
+
     </div>
   </div>
 </div>
