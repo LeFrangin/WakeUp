@@ -50,6 +50,11 @@ a img{
 	color:#FFF;
 }
 
+.page-content{
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+}
+
 /**********************************************************
 ***********************************************************
 **************************** Menu *************************
@@ -135,10 +140,21 @@ a img{
 	font-size: 40px;
 	display: none;
 }
-.page-content{
-	padding-bottom: 0 !important;
-	padding-top: 0 !important;
+
+.timeLine-overlay > span{
+	background-color: #40C8C2;
+	display: block;
+	width: 100px;
+	border-radius: 100px;
+	padding: 20px 0;
+	margin:auto;
 }
+
+/**********************************************************
+***********************************************************
+************************** Slider *************************
+***********************************************************
+***********************************************************/
 
 .page-content .range-slider{
 	z-index: 10000;
@@ -306,23 +322,13 @@ a img{
 	background-color: #4874A8;
 }
 
-#page-feedback .input-list input{
-	-moz-appearance: none;
-	box-sizing: border-box;
-	border: medium none;
-	background-color: transparent;
-	border-radius: 0px;
-	box-shadow: none;
-	padding: 10px 5px;
-	margin: 0px;
-	font-size: 20px;
-	font-weight: 300px
-	font-family: inherit;
-	color: #FFF;
-	padding-left: 10px;;
+#page-feedback .input-list{
+	border-left: 1px solid #FFF;
+	margin: 20px 0;
+	margin-left: 10px;
 }
 
-#page-feedback .input-list textarea{
+#page-feedback .input-list input, #page-feedback .input-list textarea{
 	-moz-appearance: none;
 	box-sizing: border-box;
 	border: medium none;
@@ -336,5 +342,11 @@ a img{
 	font-family: inherit;
 	color: #FFF;
 	padding-left: 10px;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
 	width: 100%;
+}
+
+#page-feedback .input-list textarea{
+	height: 100px;
 }

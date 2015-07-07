@@ -122,7 +122,7 @@ $$( '#timeLine' ).mousemove( function () {
 
     if ( $$( ".timeLine-overlay" ).attr( "data-show") == "true" )
     {
-        $$( ".timeLine-overlay" ).html( $$( this ).val() + "h" );
+        $$( ".timeLine-overlay" ).children( "span" ).html( $$( this ).val() + "h" );
         pictures.slideTo( $$( ".swiper-slide.time-" + $$( this ).val() ).attr( "data-position" ), 200, true);
     }
 });
