@@ -1,125 +1,25 @@
-
 /**********************************************************
 ***********************************************************
 ************************** General ************************
 ***********************************************************
 ***********************************************************/
-
-body, html, .page-content{
-	width: 100%;
-	height: 100%;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-}
-
-ul{
-	list-style: none;
-}
-a img{
-	border : none;
-}
-
-.shadow-bottom{
-	-webkit-box-shadow: inset 0px 5px 10px -5px #333;
-	box-shadow: inset 0px 5px 10px -5px #333;
-}
-
-.page-content .back.link span:before{
-	content: url(../img/left-arrow.png);
-}
-
-.page-content .title{
-	width: 100%;
-	text-align: center;
-	padding: 10px 0;
-
-	-webkit-box-shadow: 0px 5px 10px -5px #333;
-	box-shadow: 0px 5px 10px -5px #333;
-}
-
-.page-content .title > a{
-	position: absolute;
-	left: 0;
-	top: 5px;
-}
-
-.page-content .title > span{ 
-	
-	font-size: 30px;
-	font-weight: 300;
-	color:#FFF;
-}
-
-.page-content{
-	padding-bottom: 0 !important;
-	padding-top: 0 !important;
-}
-
-/**********************************************************
-***********************************************************
-**************************** Menu *************************
-***********************************************************
-***********************************************************/
-
-#main-menu{
-	width: 100%;
-	height: 100%;
+body{
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#000;
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	width: 100%;
 }
-#main-menu > li{
+
+.main{
+	height: 100%;
+	width: 100%;
 	position: fixed;
-	left: 0;
-	width: 100%;
-	height: 25%;
-	text-align: center;
-}
-
-#main-menu li > a{
-	color: #FFF;
-	position: absolute;
-	top: 25%;
-	left: 0;
-	margin: auto;
-	width: 100%;
-	font-size: 30px;
-	text-align: left;
-	padding-left: 10px;
-}
-
-#main-menu li a > span{
-	left: 70px;
-	position: absolute;
-	top: 5px;
-}
-
-#main-menu li a > img{
-	width: 50px;
-	height: 50px;
-	position: absolute;
-}
-
-#main-menu .account{
-	background-color: #40C8C2;
-	top : 0;
-}
-
-#main-menu .favorite{
-	background-color: #4D9CD0;
-	/*background-color: #692E5A;*/
-	top: 25%;
-}
-
-#main-menu .feedback{
-	background-color: #4874A8;
-	/*background-color: #4F2851;*/
-	top:  50%;
-}
-
-#main-menu .disconnect{
-	background-color: #595386;
-	/*background-color: #3B2041;*/
-	top: 75%;
+	top: 0;
+	left: 0,
 }
 
 /**********************************************************
@@ -127,226 +27,39 @@ a img{
 ************************* Timeline ************************
 ***********************************************************
 ***********************************************************/
-
-.timeLine-overlay{
-	background-image: url("../img/overlay.png");
-	position: fixed;
+.swiper-timeline{
 	width: 100%;
 	height: 100%;
-	z-index: 10000;
-	color: #FFF;
+}
+
+.swiper-slide{
 	text-align: center;
-	padding-top: 50%;
-	font-size: 40px;
-	display: none;
-}
-
-.timeLine-overlay > span{
-	background-color: #40C8C2;
-	display: block;
-	width: 100px;
-	border-radius: 100px;
-	padding: 20px 0;
-	margin:auto;
-}
-
-/**********************************************************
-***********************************************************
-************************** Slider *************************
-***********************************************************
-***********************************************************/
-
-.page-content .range-slider{
-	z-index: 10000;
-	position: fixed;
-	bottom: 0;
-	width: 90%;
-	margin-left: 5%;
-	background: transparent;
-}
-.page-content .range-slider{
-	background: transparent !important;
-}
-
-.page-content .swiper-container{
-	height: 100%;
-}
-
-.page-content .swiper-container .swiper-slide{
-	width: 100%;
-}
-
-.page-content .swiper-container .swiper-slide img{
-	width: 100%;
-	height: 100%;
-}
-
-.page-content .swiper-container .icon-take-picture{
-
-}
-
-.page-content .swiper-container .icon-take-picture .icon img{
-	width: 100%;
-}
-
-.page-content .swiper-container .icon-take-picture .icon{
-	width: 100%;
-	position: fixed;
-}
-
-.page-content .swiper-container .icon-take-picture .icon.flash{
-	width: 30px;
-	top: 5%;
-	left: 5%;
-}
-.page-content .swiper-container .icon-take-picture .icon.switch{
-	width: 30px;
-	top: 5%;
-	right: 5%;
-}
-
-.page-content .swiper-container .icon-take-picture .icon.press{
-	width: 20%;
-	bottom: 5%;
-	right: 40%;
-}
-
-#icon-panel .icon{
-	position: fixed;
-	top: 10px;
-	z-index: 10000;
-	width: 40px;
-}
-
-#icon-panel .icon img{
-	width: 100%;
-}
-
-#icon-panel .info{
-	left: 10px;
-}
-
-#icon-panel .favorite{
-	left: 55px;
-}
-
-#icon-panel .menu{
-	top: 0;
-	right: 10px;
-	width: 60px;
-}
-
-/**********************************************************
-***********************************************************
-************************** Account ************************
-***********************************************************
-***********************************************************/
-
-#page-account{
-	background-color: #40C8C2;
-}
-
-#page-account .input-list{
-
-	margin: 20px 0;
-	margin-left: 10px;
-	border-left: 1px solid #FFF;
-}
-
-#page-account .input-list input{
-	-moz-appearance: none;
-	box-sizing: border-box;
-	border: medium none;
-	background-color: transparent;
-	border-radius: 0px;
-	box-shadow: none;
-	padding: 10px 5px;
-	margin: 0px;
-	font-size: 20px;
-	font-weight: 300px
-	font-family: inherit;
-	color: #FFF;
-	padding-left: 10px;
-
-}
-
-/**********************************************************
-***********************************************************
-************************** Favorite************************
-***********************************************************
-***********************************************************/
-
-#page-favorite{
-	background-color: #4D9CD0;
-}
-
-#page-favorite .favorite-list{
-	width: 85%;
-	padding: 0;
-	margin: auto;
-	margin-top: 10px;
-}
-
-#page-favorite .favorite-list > li{
-	padding: 10px 0;
-	border-bottom: 1px solid #FFF;
-}
-
-#page-favorite .favorite-list li > .login{
-	color: #FFF;
-	font-size: 24px;
-	font-weight: 300;
-	padding-left: 10px;
-}
-
-#page-favorite .favorite-list li > .number{
-	color: #4D9CD0;
 	font-size: 18px;
-	font-weight: 400;
-	background-color: #FFF;
-	padding: 2px 10px;
-	position: absolute;
-	right: 10%;
+	background: #fff;
+	width: 60%;
+	height: 100%;
 
-	-webkit-border-radius: 10px;
-	border-radius: 40px;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 }
 
-/**********************************************************
-***********************************************************
-************************* Feedback ************************
-***********************************************************
-***********************************************************/
-
-#page-feedback{
-	background-color: #4874A8;
+.swiper-slide{
+	width: auto;
+	height: auto;
 }
 
-#page-feedback .input-list{
-	border-left: 1px solid #FFF;
-	margin: 20px 0;
-	margin-left: 10px;
-}
-
-#page-feedback .input-list input, #page-feedback .input-list textarea{
-	-moz-appearance: none;
-	box-sizing: border-box;
-	border: medium none;
-	background-color: transparent;
-	border-radius: 0px;
-	box-shadow: none;
-	padding: 10px 5px;
-	margin: 0px;
-	font-size: 20px;
-	font-weight: 300px
-	font-family: inherit;
-	color: #FFF;
-	padding-left: 10px;
-	font-family: "Source Sans Pro";
-	font-weight: 400;
+.swiper-slide > img{
 	width: 100%;
-}
-
-#page-feedback .input-list textarea{
-	height: 100px;
+	height: 100%;
 }
