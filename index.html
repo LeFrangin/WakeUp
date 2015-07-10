@@ -45,12 +45,13 @@
     <script>
     var timeline = new Swiper('.swiper-timeline', {
         slidesPerView: 'auto',
-        centeredSlides: true,
         spaceBetween: 0,
-        grabCursor: true
+        grabCursor: true,
+        freeMode: true,
     });
     var menu = new Swiper('.swiper-menu', {
-        direction: 'vertical'
+        direction: 'vertical',
+        ratio: 0.85
     });
     </script>
 </body>
