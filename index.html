@@ -10,17 +10,32 @@
 </head>
 <body>
   <div class="main">
-
-    <!-- Timeline -->
-    <div class="swiper-timeline">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="Assets/images/image1.jpg" /></div>
-            <div class="swiper-slide"><img src="Assets/images/image3.jpg" /></div>
-            <div class="swiper-slide"><img src="Assets/images/image5.jpg" /></div>
-            <div class="swiper-slide"><img src="Assets/images/image4.jpg" /></div>
+    <!-- Menu -->
+    <div class="swiper-menu">
+      <div class="swiper-wrapper">
+        <!-- Profil -->
+        <div class="swiper-slide">Profil
         </div>
+        <!-- End Profil -->
+        <!-- Timeline -->
+        <div class="swiper-slide">
+          <div class="swiper-timeline">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="Assets/images/image1.jpg" /></div>
+                  <div class="swiper-slide"><img src="Assets/images/image3.jpg" /></div>
+                  <div class="swiper-slide"><img src="Assets/images/image5.jpg" /></div>
+                  <div class="swiper-slide"><img src="Assets/images/image4.jpg" /></div>
+              </div>
+          </div>
+        </div>
+        <!-- End Timeline -->
+        <!-- Take a picture -->
+        <div class="swiper-slide">Take a picture</div>
+        <!-- End Take a picture -->
+        
+      </div>  
     </div>
-
+    <!-- End Menu -->
   </div>
 
     <!-- Swiper JS -->
@@ -28,11 +43,14 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper('.swiper-timeline', {
+    var timeline = new Swiper('.swiper-timeline', {
         slidesPerView: 'auto',
         centeredSlides: true,
         spaceBetween: 0,
         grabCursor: true
+    });
+    var menu = new Swiper('.swiper-menu', {
+        direction: 'vertical'
     });
     </script>
 </body>
